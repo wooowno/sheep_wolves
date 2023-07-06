@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.sign {
+    height: 75vh;
+    width: 80%;
+    align-self: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.sign form {
+    margin: 10px 0;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.sign form input {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.sign form button {
+    width: 40%;
+}
+
+.sign p {
+    font-size: min(5vh, 4vw);
+}
+
+@media (min-width: 481px) {
+    .sign {
+        width: 60%;
+        height: 80vh;
+    }
+
+    .sign form button {
+        width: 40%;
+    }
+
+    .sign p {
+        font-size: min(4vh, 3vw);
+    }
+}
+
+@media (min-width: 920px) or (orientation:landscape) {
+    .sign {
+        width: 40%;
+        height: 80vh;
+    }
+
+    .sign form button {
+        width: 30%;
+    }
+
+    .sign p {
+        font-size: 2.5vmin;
+    }
+}

@@ -1,0 +1,25 @@
+{{#section 'head'}}
+    <link rel="stylesheet" href="/css/game.css">
+{{/section}}
+
+<p id="message"></p>
+
+<div id="game">
+    <sidebar id="turn">
+        <h2>Ход:</h2>
+        <p id="name"></p>
+    </sidebar>
+
+    <table id="board"></table>
+
+    <sidebar>
+        <h2>Результаты:</h2>
+        <ul>
+            <li>Овца-<span id="sn"></span>: <span id="sc">0</span></li>
+            <li>Волк-<span id="wn"></span>: <span id="wc">0</span></li>
+        </ul>
+    </sidebar>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/scripts/game.js"></script>

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400&display=swap');
+
+/* || RESET */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, 
+button, 
+input {
+    font: inherit;
+}
+
+/* || VARIABLES */ 
+
+:root {
+    /* FONTS */
+    --FF: 'Wix Madefor Display', sans-serif;
+    --FS: 6vmin;
+
+    /* COLORS */
+    --BGCOLOR: #ffbd61;
+    --D-BGCOLOR: #c27407;
+    --DARK-COLOR: #47280a;
+    --MEDIUM-COLOR: #af7648;
+    --LIGHT-COLOR: #ffd493;
+    --FONT-COLOR: #2a1504;
+    --GRAY: #9b9791;
+
+    /* BORDERS */
+    --BORDERS: 2px solid var(--MEDIUM-COLOR);
+    --BORDER-RADIUS: 15px;
+}
+
+/* || UTILITY CLASSES */
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+/* || GENERAL STYLES */
+
+html {
+    font-size: var(--FS);
+    font-family: var(--FF);
+    background-color: var(--BGCOLOR);
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+/* || HEADER */
+
+header {
+    width: 100%;
+    height: 8vh;
+    padding: 0 2.16%;
+    background-color: var(--D-BGCOLOR);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    text-transform: lowercase;
+    margin-bottom: 0.5vh;
+    width: 45%;
+    height: 100%;
+    font-size: 7vw;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav {
+    font-size: 5vw;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+}
+
+header nav a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--FONT-COLOR);
+    
+}
+
+@media (min-width: 481px) {
+    :root {
+        --FS: 5vmin;
+    }
+
+    header {
+        height: 6vh;
+    }
+
+    header h1 {
+        font-size: 7vw;
+    }
+
+    header nav {
+        font-size: 3vh;
+        width: 45%;
+    }
+}
+
+@media (min-width: 920px) or (orientation:landscape) {
+    :root {
+        --FS: 3.5vmin;
+    }
+
+    header {
+        height: 10vh;
+    }
+
+    header h1 {
+        font-size: 7vh;
+    }
+
+    header nav {
+        font-size: 4.5vh;
+        width: 45%;
+        justify-content: space-evenly;
+    }
+
+}

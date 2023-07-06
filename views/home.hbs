@@ -1,0 +1,42 @@
+{{#section 'head'}}
+    <link rel="stylesheet" href="/css/home.css">
+{{/section}}
+<div class="home">
+    <nav>
+        <form action="/game" method="post">
+            <button type="submit">Создать игру</button>
+        </form>
+        <form id="join" action="/join-game" method="post">
+            <button type="submit">Присоединиться к игре</button>
+        </form>
+    </nav>
+    <div id="bottom">
+        <aside id="rules">
+            <h2>Правила игры:</h2>
+
+            <div id="ruleset">
+                <article>
+                    <h3>Цель Волка:</h3>
+                    <p>Окружить Овцу</p>
+                    <img src="/img/wolf_rule.png" alt="Волки окружили овцу" title="Цель Волков" width="379" height="378">
+                    <figcaption class="offscreen">Волки окружили Овцу</figcaption>
+                </article>
+                <article>
+                    <h3>Цель Овцы:</h3>
+                    <p>Обойти Волка</p>
+                    <img src="/img/sheep_rule.png" alt="Овца на ряд выше всех Волков" title="Цель Овцы" width="380" height="380">
+                    <figcaption class="offscreen">Овца на ряд выше всех Волков</figcaption>
+                </article>
+            </div>           
+        </aside>
+
+        <aside id="top">
+            <h2>ТОП игроков:</h2>
+            <ol id="tops">
+                {{#each top}}
+                    <li>{{name}}</li>
+                {{/each}}
+            </ol>
+        </aside>
+    </div>
+</div>

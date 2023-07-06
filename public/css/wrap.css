@@ -1,0 +1,42 @@
+.wrap {
+    height: 60vh;
+    padding: 0 5vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-self: center;
+}
+
+.wrap p {
+    height: 13%;
+}
+
+.wrap #name {
+    font-size: 2rem;
+    height: 20%;
+}
+
+.wrap form {
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.wrap form button {
+    font-weight: 600;
+    background-color: var(--LIGHT-COLOR);
+    border: 2px solid var(--D-BGCOLOR);
+    border-radius: 10px;
+    width: 50vw;
+    height: 6vh;
+}
+
+@media (min-width: 920px) or (orientation:landscape) {
+    :root {
+        --FS: 4vmin;
+    }
+    
+    .wrap form button {
+        width: 20vw;
+    }
+}

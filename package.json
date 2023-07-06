@@ -1,0 +1,25 @@
+{
+  "name": "sheep_and_wolves",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sheep_wolves.js",
+  "scripts": {
+    "start": "nodemon sheep_wolves.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^5.6.0",
+    "mongoose": "^7.2.4",
+    "socket.io": "^4.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.9"
+  }
+}
